@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<script src="./login.js?v=2" defer></script>
+
+<body>
+    <div class="container">
+        <div class="login-card">
+            <h2>Login</h2>
+
+            <form id="loginForm">
+                <div class="input-box">
+                    <span class="icon"> <i class="fa-solid fa-user"></i></span>
+                    <input type="email" id="email" name="email" placeholder="E-mail" required>
+
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"> <i class="fa-solid fa-lock"></i></span>
+                    <input type="password" id="password" name="password" placeholder="Senha" required>
+                    <button type="button" class="password-toggle" id="toggleLoginPassword"
+                        aria-label="Mostrar senha" aria-pressed="false" aria-controls="password"
+                        title="Mostrar senha">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <div class="options">
+                    <label>
+                        <input type="checkbox" id="rememberMe"> Lembrar e-mail nesta sessão
+                    </label>
+                    <a href="" class="linkl"> Esqueceu a senha? </a>
+                </div>
+
+                <p id="loginMessage" class="login-message" role="alert"></p>
+
+                <button type="submit" class="btn">Entrar</button>
+
+                <p class="link-p">
+                    <a href="./cadastro.html" class="link" > Não tem uma conta? </a>
+                </p>
+            </form>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

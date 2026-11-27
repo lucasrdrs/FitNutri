@@ -1,0 +1,22 @@
+# .NET build and IDE files
+[Bb]in/
+[Oo]bj/
+.vs/
+*.user
+*.suo
+TestResults/
+coverage/
+
+# Node/frontend tooling
+node_modules/
+
+# Local secrets and environment-specific settings
+.env
+.env.*
+!.env.example
+appsettings.Local.json
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/

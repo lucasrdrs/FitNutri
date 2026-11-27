@@ -1,0 +1,18 @@
+@api = http://localhost:5293
+
+### Testar cadastro
+POST {{api}}/api/auth/register
+Content-Type: application/json
+
+{
+  "email": "",
+  "password": ""
+}
+### Login
+POST {{api}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "",
+  "password": ""
+}

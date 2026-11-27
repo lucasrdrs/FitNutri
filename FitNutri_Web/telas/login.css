@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    background-image: url(../imagens/fitnutri-login-fundo-escuro.png);
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-left: auto;
+}
+
+.login-card {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: clamp(24px, 5vw, 72px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: #103B2B;
+}
+
+
+.login-card h2,
+.login-card form {
+    width: 100%;
+    max-width: 420px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .login-card {
+        min-height: 100vh;
+    }
+}
+h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom:  20px;
+    color: black;
+}
+
+.input-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 10px;
+    border-radius: 6px;
+    margin: 20px;
+    color: black;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.icon{
+    margin-right: 10px;
+}
+
+.input-box input{
+    background: rgba(255, 255, 255, 1);
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.input-box input::placeholder{
+    color: black;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: black;
+}
+
+.link{
+    color: black;
+    text-decoration: none;
+    margin: 14px;
+}
+
+.link-p{
+    text-align: center;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    padding: 14px 14px;
+    background: #103B2B;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.login-message {
+    min-height: 18px;
+    margin: 0 20px 10px;
+    color: #a32626;
+    font-size: 13px;
+}
+
+/* Botão acessível para mostrar/ocultar palavras-passe */
+.password-toggle {
+    flex: 0 0 auto;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: #103B2B;
+    cursor: pointer;
+    transition: background-color 160ms ease, color 160ms ease;
+}
+
+.password-toggle:hover {
+    background-color: rgba(16, 59, 43, 0.08);
+}
+
+.password-toggle:focus-visible {
+    outline: 2px solid #103B2B;
+    outline-offset: 2px;
+}
+
+.password-toggle i {
+    font-size: 15px;
+}
+
+.input-box input {
+    min-width: 0;
+}
