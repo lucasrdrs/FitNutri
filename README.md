@@ -1,6 +1,6 @@
 # FitNutri
 
-Repositório unificado do projeto FitNutri. O front-end e a API estão organizados em pastas separadas; os repositórios de origem permanecem independentes e inalterados.
+Repositório unificado do projeto FitNutri. O front-end e a API estão organizados em pastas separadas.
 
 ## Estrutura
 
@@ -15,8 +15,6 @@ FitNutri/
 1. Abra `FitNutri.API/br.com.FitNutri.csproj` no Visual Studio e execute a API com a configuração de desenvolvimento adequada.
 2. Abra a pasta `FitNutri_Web` no VS Code e sirva os arquivos com Live Server.
 3. Se os endereços locais da API forem diferentes dos configurados no front-end, ajuste a configuração local correspondente antes de executar.
-
-Não versione chaves, senhas, tokens, certificados ou configurações locais. Use User Secrets do .NET ou variáveis de ambiente para valores sensíveis.
 
 ## Origem
 
